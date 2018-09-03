@@ -99,12 +99,23 @@ class Home extends React.Component{
                                 </li>
                             </ul>
                         </div>
-                        <div className="clients">
+                        
+                    </div>
+                    <div className="clients">
                             <div className="container">
                                 <h2>Clients</h2>
+                                <ul className="list">
+                                <li><img src="images/adroidNormal.png" alt="clients" /></li>
+                                <li><img src="images/cboarddehNormal.png" alt="clients" /></li>
+                                <li><img src="images/cboardNormal.png" alt="clients" /></li>
+                                <li><img src="images/starfinvestNormal.png" alt="clients" /></li>
+                                <li><img src="images/divya-portfolio-logoNormal.png" alt="clients" /></li>
+                                <li><img src="images/vee-mech-industries-logo-120x120Normal.png" alt="clients" /></li>
+                                
+                            </ul>
                             </div>
+                            
                         </div>
-                    </div>
                 </div>
                 
             </div>
