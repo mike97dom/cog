@@ -1,8 +1,11 @@
-
+html{
+  overflow-x: hidden;
+}
 body{
   color: #4a4a4a;
   font-size: 14px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 h1{
   font-size: 95px;
@@ -33,6 +36,7 @@ display: flex;
 }
 .header{
   background:#262626;
+  position: relative;
   
 }
 .header .strip{
@@ -40,7 +44,8 @@ display: flex;
 }
 .nav{
   justify-content:flex-end;
-  padding-top: 24px;
+  padding-top: 10px;
+  padding-right: 41px;
 }
 .header .nav a:hover{
   color:#d3d3d3;
@@ -56,7 +61,12 @@ display: flex;
   color:white;
   text-transform: uppercase;
 }
-
+.header .container{
+  position: relative;
+}
+.logo{
+  width:81px;
+}
 
 .footer{
   color:#fff;
@@ -197,6 +207,79 @@ display: flex;
 .explore ul li:hover img{
   top:-2px;
 }
+.side-bar{
+  text-align: center;
+  width:30%;
+  position: absolute;
+  top:0;
+  right: 0;
+  background: #262626;
+  height:100vh;
+  z-index: 1;
+  padding-top: 70px;
+  right: -405px;
+  transition: all 0.5s;
+}
+.side-bar.active{
+  right:0;
+}
+.side-bar ul{
+  padding: 0
+}
+.side-bar li{
+list-style: none;
+padding:10px;
+}
+
+.side-bar-menu-button{
+  position: absolute;
+  top: 26px;
+  right: 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+.side-bar-menu-button i{
+  color:white;
+  font-size: 21px;
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.side-bar li a{
+display: inline-block;
+color:white;
+text-transform: uppercase;
+font-size: 18px;
+text-decoration: none;
+}
+.side-bar .close{
+  position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #bbbbbb;
+    padding: 0px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: 400;
+    border: 2px solid white;
+    text-shadow: none;
+    width: 30px;
+}
+.side-bar .close:hover{
+  color: white !important;
+  border-color: white;
+}
+.side-bar .close:hover{
+  color: white;
+  border-color: white;
+}
+
 
 @media only screen and (max-width: 991px) {
 
@@ -212,7 +295,7 @@ display: flex;
 @media only screen and (max-width: 768px) {
 
   .logo{
-    height:45px;
+    width: 58px;
   }
   .nav{
     padding-top: 6px;;
@@ -244,15 +327,29 @@ h2 {
 .footer .strip {
   padding-bottom: 0;
 }
+.side-bar-menu-button {
+    top: 21px;
+    height: 33px;
+    width: 33px;
+}
+.side-bar-menu-button i {
+  font-size: 19px;
+}
+.side-bar li a {
+  font-size: 11px;
+}
+.side-bar li {
+  padding: 8px;
+}
 }
 
 @media only screen and (max-width: 576px) {
   .logo {
-    height: 35px;
+    width: 41px;
 }
 
 .header .nav a {
-  padding: 5px 12px;
+  padding: 5px 7px;
   font-size: 7px;
 }
 h1 {
@@ -265,6 +362,16 @@ h1 {
   margin-bottom: 17px;
 }
 
-
+.side-bar-menu-button {
+  top: 21px;
+  height: 24px;
+  width: 24px;
+  right: 8px;
+}
+.side-bar-menu-button i {
+  color: white;
+  font-size: 12px;
+  vertical-align: middle;
+}
 
 }

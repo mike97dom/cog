@@ -2,16 +2,24 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Products from './components/Products/Products'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Home />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/home' component={Home}/>
+            <Route path='/products' component={Products}/>
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   }
 }
