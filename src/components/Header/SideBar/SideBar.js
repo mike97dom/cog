@@ -1,8 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sideBar = ()=> {
-    return(
+class SideBar extends React.Component {
+
+    constructor(props){
+        super(props)
+        this.state = {
+            sidebarShow:false
+        }
+    }
+
+    sideBarClickHandler = ()=>{
+        this.setState({
+            sidebarShow:!this.state.sidebarShow
+        })
+    }
+
+
+    render(){
+        return(
         <div className="side-bar">
             <span className="close">
             X
@@ -36,4 +52,7 @@ const sideBar = ()=> {
             </ul>
         </div>
     )
+    }
 }
+
+export default SideBar;

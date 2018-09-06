@@ -21,25 +21,25 @@ class Header extends React.Component {
                 <div className="container">
                     <div className="strip">
                         <div className="logo-wrap left">
-                            <Link to='/'>
+                            <Link to='/home'>
                                 <img className="logo" src="images/Logo Cogmac-white textNormal.png" alt="logo" />
                             </Link>
                         </div>
                         <ul className="nav right">
                             <li>
-                                <a href="#">
+                                <Link to="/products">
                                     Products
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     Research
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
 
                         </ul>
@@ -56,27 +56,32 @@ class Header extends React.Component {
                         </span>
                         <ul>
                             <li>
-                                <Link to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/home" >
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/about" >
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/products" >
                                     Products
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/services" >
                                     services
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/finance">
+                                    Finance
+                                </Link>
+                            </li>
+                            <li>
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/" >
                                     Contact US
                                 </Link>
                             </li>

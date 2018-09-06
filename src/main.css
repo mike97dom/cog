@@ -1,0 +1,174 @@
+.content-heading {
+    background-color: #4e5cc4;
+    color: #ffffff;
+    font-size: 33px;
+    padding-bottom: 8px;
+    padding-top: 4px;
+}
+
+.no-margin, .row {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.futureProduct h2, .serviceProduct h2, .clientsProduct h2 {
+    font-size: 26px;
+}
+
+.financeTeam p {
+    color: #262626;
+    padding: 122px;
+    font-size: 26px;
+}
+
+.financeTeam figure {
+    width: 100vh;
+    padding: 14px 0;
+}
+
+.financeTeam img {
+    width: 100%;
+}
+
+.futureProductHeading {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.futureProduct h2 {
+    color: #262626;
+}
+
+.futureProductHeadingWraper {
+    padding-top: 20px;
+}
+
+.checkBoxContainer {
+    position: relative;
+    padding-left: 52px;
+    color: #262626;
+    font-weight: 300;
+}
+
+.checkBox {
+    background-image: url("./images/checkBox.png");
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateY(-34%)
+}
+
+.serviceProduct {
+    background-color: #fafafa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.clientsProduct {
+    padding-top: 60px;
+    margin-bottom: 60px;;
+}
+
+.productsName {
+    padding: 60px 0 40px;
+}
+
+.productsNameHeading h3 {
+    font-size: 27px;
+    padding-top: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.ScreenShots {
+    height: 800px;
+    background-color: #fafafa;
+}
+
+.ScreenShots h2 {
+    font-size: 26px;
+    padding-top: 30px;
+}
+
+.chooseHeading h2, .workHere h2 {
+    color: #575757;
+    font-weight: 800;
+    font-size: 26px;
+    padding: 30px 0;
+}
+
+.chooseHeading p {
+    font-size: 27px;
+    width: 35%;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.workWrapper {
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.joinus {
+    background-color: #575757;
+    border-radius: 28px;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+}
+
+.joinus:hover {
+    color: #ffffff;
+}
+.page-wrapper h2{
+    font-size: 27px;
+}
+.checkBoxContainer{
+    font-size: 20px;
+}
+.services-page.page-wrapper .head{
+    padding-bottom: 15px;
+}
+.about-page.page-wrapper{
+    padding-bottom: 30px;
+}
+.workWrapper img{
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+.financeTeam p {
+    padding: 20px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .content-heading{
+        font-size: 26px;
+    }
+    .page-wrapper h2{
+        font-size: 22px;
+    }
+    .page-wrapper h3{
+        font-size: 20px;
+    }
+    .checkBoxContainer{
+        font-size: 18px;
+    }
+    .financeTeam p {
+        font-size: 18px;
+    }
+    .chooseHeading p {
+        font-size: 20px;
+        width: 55%;
+    }
+}

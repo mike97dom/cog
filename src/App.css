@@ -118,6 +118,9 @@ display: flex;
 .banner-wrap{
   position: relative;
 }
+.banner-wrap.slider .item{
+  position: relative;
+}
 .banner{
     width:100%;
     height:auto;
@@ -215,7 +218,7 @@ display: flex;
   right: 0;
   background: #262626;
   height:100vh;
-  z-index: 1;
+  z-index: 200;
   padding-top: 70px;
   right: -405px;
   transition: all 0.5s;
@@ -223,6 +226,7 @@ display: flex;
 .side-bar.active{
   right:0;
 }
+
 .side-bar ul{
   padding: 0
 }
@@ -279,6 +283,35 @@ text-decoration: none;
   color: white;
   border-color: white;
 }
+.banner-arrow{
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  color: #a5a4a4;
+  font-size: 33px;
+  cursor: pointer;
+}
+.banner-arrow.left{
+  left:27px;
+  top:46%;
+  z-index:10;
+  display: block;
+}
+.banner-arrow.right{
+  right:27px;
+  top:46%;
+  z-index:10;
+  display: block;
+}
+
+/*pKs*/
+
+
+
+
+/*pks*/
 
 
 @media only screen and (max-width: 991px) {
@@ -290,6 +323,16 @@ text-decoration: none;
     padding-right: 10px;
   }
 
+}
+.error-page{
+  padding:100px 0;
+  text-align: center;
+}
+.error-page img{
+  width:40%;
+  height:auto;
+  margin:0 auto;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -340,6 +383,10 @@ h2 {
 }
 .side-bar li {
   padding: 8px;
+}
+.banner-arrow.left, .banner-arrow.right{
+top:40%;
+font-size: 18px;
 }
 }
 

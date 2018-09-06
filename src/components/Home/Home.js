@@ -1,16 +1,60 @@
 import React from 'react';
+import Slider from "react-slick";
 
+
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="banner-arrow  left"
+        onClick={onClick}
+      ><i className="fa fa-angle-left" aria-hidden="true"></i></div>
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className="banner-arrow right"
+        onClick={onClick}
+      ><i className="fa fa-angle-right" aria-hidden="true"></i></div>
+    );
+  }
 class Home extends React.Component{
     render(){
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            arrows:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay:true,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />
+          };
         return(
             <div className="home-page">
-                <div className="banner-wrap">
-                    <img className="banner" src="images/welding1Normal.png" alt="banner" />
-                    <div className="container banner-info">
-                            <h1>CogMac</h1>
-                            <span>Machines With Cognition</span>
-                            <span className="effect"></span>                            
-                    </div>
+                <div className="banner-wrap slider">
+                    <Slider {...settings}>
+                        <div className="item">
+                            <img className="banner" src="images/welding1Normal.png" alt="banner" />
+                            <div className="container banner-info">
+                                    <h1>CogMac</h1>
+                                    <span>Machines With Cognition</span>
+                                    <span className="effect"></span>                            
+                            </div>
+                        </div>
+                        <div className="item">
+                            <img className="banner" src="images/welding1Normal.png" alt="banner" />
+                            <div className="container banner-info">
+                                    <h1>CogMac</h1>
+                                    <span>Machines With Cognition</span>
+                                    <span className="effect"></span>                            
+                            </div>
+                        </div>
+                    </Slider>
                 </div>
                 <div className="explore">
                     <div className="research">
@@ -18,7 +62,7 @@ class Home extends React.Component{
                             <h2>RESEARCH area </h2>
                             <ul className="list">
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/aiNormal.png" alt="art" />
                                     </a>
                                     <span className="label">
@@ -26,7 +70,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/automationNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -34,7 +78,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/dataanalNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -42,7 +86,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/embeddedNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -50,7 +94,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/languageNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -66,7 +110,7 @@ class Home extends React.Component{
                             <h2>domain</h2>
                             <ul className="list">
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/financeNormal.png" alt="art" />
                                     </a>
                                     <span className="label">
@@ -74,7 +118,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/f&bNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -82,7 +126,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/healthcare copyNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">
@@ -90,7 +134,7 @@ class Home extends React.Component{
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="/">
+                                    <a href="#!">
                                         <img src="images/smartcityNormal.png" alt="auto" />
                                     </a>
                                     <span className="label">

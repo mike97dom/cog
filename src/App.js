@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import './SlickMin.css';
 import './App.css';
+import './main.css'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Products from './components/Products/Products'
+import Products from './components/Products/Products';
+import Finance from './components/Finance/Finance';
+import Services from './components/Services/Services';
+import Career from './components/Career/Career';
+import ErrorPage from './components/404/404';
+
 
 class App extends Component {
   render() {
@@ -16,6 +23,11 @@ class App extends Component {
             <Route exact path='/' component={Home}/>
             <Route path='/home' component={Home}/>
             <Route path='/products' component={Products}/>
+            <Route path='/finance' component={Finance} />
+            <Route path='/services' component={Services} />
+            <Route path='/career' component={Career} />
+            <Route component={ErrorPage} />
+            
           </Switch>
           <Footer />
         </div>

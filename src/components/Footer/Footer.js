@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 class Footer extends React.Component{
     render(){
@@ -14,14 +15,14 @@ class Footer extends React.Component{
                         <div className="footer-item col-6 col-sm-6 col-md-3">
                             <h5>Company</h5>
                             <ul className="nav-footer">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Awards</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Blog</a></li>  
-                                <li><a href="#">Petents</a></li>
-                                <li><a href="#">White Papers</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li><Link to="#">Events</Link></li>
+                                <li><Link to="#">Awards</Link></li>
+                                <li><Link to="#">Gallery</Link></li>
+                                <li><Link to="#">Blog</Link></li>  
+                                <li><Link to="#">Petents</Link></li>
+                                <li><Link to="#">White Papers</Link></li>
+                                <li><Link to="/career">Careers</Link></li>
                             </ul>
 
                         </div>
