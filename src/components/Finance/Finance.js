@@ -57,10 +57,22 @@ class Finance extends React.Component{
                         </div>
                     </div>
                 </section>
-                <section className="clientsProduct">
+                <section className="clientsProduct explore">
                     <div className="row">
-                        <div className="col-sm-12 col-md-12">
-                            <h2 className="text-center text-uppercase ">Clients</h2>
+                        <div className="clients">
+                            <div className="container">
+                                <h2>Clients</h2>
+                                <ul className="list">
+                                <li><img src="images/adroidNormal.png" alt="clients" /></li>
+                                <li><img src="images/cboarddehNormal.png" alt="clients" /></li>
+                                <li><img src="images/cboardNormal.png" alt="clients" /></li>
+                                <li><img src="images/starfinvestNormal.png" alt="clients" /></li>
+                                <li><img src="images/divya-portfolio-logoNormal.png" alt="clients" /></li>
+                                <li><img src="images/vee-mech-industries-logo-120x120Normal.png" alt="clients" /></li>
+                                
+                            </ul>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
