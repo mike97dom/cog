@@ -260,7 +260,7 @@ text-transform: uppercase;
 font-size: 18px;
 text-decoration: none;
 }
-.side-bar .close{
+.button.close{
   position: absolute;
     top: 20px;
     right: 20px;
@@ -275,11 +275,11 @@ text-decoration: none;
     text-shadow: none;
     width: 30px;
 }
-.side-bar .close:hover{
+.button.close:hover{
   color: white !important;
   border-color: white;
 }
-.side-bar .close:hover{
+.button.close:hover{
   color: white;
   border-color: white;
 }
@@ -304,6 +304,24 @@ text-decoration: none;
   top:46%;
   z-index:10;
   display: block;
+}
+
+.closeIcon-popup{
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+.close-popup{
+  position: absolute;
+  top:20px;
+  right:20px;
+  z-index: 300;
+  color:white;
+  font-size:20px;
+  cursor: pointer;
+}
+.profile-list .item{
+  cursor: pointer;
 }
 
 /*pKs*/
@@ -387,6 +405,10 @@ h2 {
 .banner-arrow.left, .banner-arrow.right{
 top:40%;
 font-size: 18px;
+}
+.close-popup {
+
+  color: #636363;
 }
 }
 

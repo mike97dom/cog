@@ -37,7 +37,7 @@ class Header extends React.Component {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/">
+                                <Link to="/contact">
                                     Contact
                                 </Link>
                             </li>
@@ -51,7 +51,7 @@ class Header extends React.Component {
                     
                 </div>
                 <div className={(this.state.sidebarShow===false)?"side-bar":"side-bar active"}>
-                        <span onClick={(e)=>{this.sideBarClickHandler(e)}} className="close">
+                        <span onClick={(e)=>{this.sideBarClickHandler(e)}} className="close button">
                             x
                         </span>
                         <ul>
@@ -81,7 +81,7 @@ class Header extends React.Component {
                                 </Link>
                             </li>
                             <li>
-                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/" >
+                                <Link onClick={(e)=>{this.sideBarClickHandler(e)}} to="/contact" >
                                     Contact US
                                 </Link>
                             </li>

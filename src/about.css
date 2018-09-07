@@ -1,0 +1,56 @@
+
+.aboutus figure{margin-top:40px;}
+.aboutus img{width:100%;border-radius: 50%;}
+.aboutus h4{font-weight: 700; margin-bottom: 5px;}
+
+
+/*******************contactDetailsPopup******************/
+.contactDetailsPopup{position: fixed;top:0;height:100vh;width:100%;background-color: rgba(0,0,0,0.8);z-index: 2;}
+.contactDetailsPopupContainer{position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%}
+
+    .wrapper-page.contact-page .contactDetailsPopupContainer{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%
+    }
+    .wrapper-page.contact-page .contactDetailsPopup{
+        height:auto;
+        margin-bottom: 30px;;
+    }
+
+
+.popupWrapper{width:80%;margin:30px 0;}
+.infoWrapper{background-color: #ffffff;padding: 20px 0;}
+.contactDetails{}
+
+.contactDetailsPopup figure img{width:100%;border-radius: 50px;}
+.contactDetailsPopup .userinfo h4 ,.contactDetailsPopup .userinfo p{padding-left:10px;}
+.contactDetailsPopup figure{width:50px;}
+.detailsWrapper .detailsHeading{font-weight: 700;}
+.detailsWrapper{margin:30px 0 20px;}
+.detailsWrapper:last-child{padding-bottom: 20px;}
+.contactDetailsPopup .contactDetails{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00c6fb+0,2989d8+56,005bea+99 */
+    background: #00c6fb; /* Old browsers */
+    background: -moz-linear-gradient(top, #00c6fb 0%, #2989d8 56%, #005bea 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00c6fb 0%,#2989d8 56%,#005bea 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00c6fb 0%,#2989d8 56%,#005bea 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6fb', endColorstr='#005bea',GradientType=0 ); /* IE6-9 */padding: 20px 20px 170px;}
+.contactDetails h3{color:#ffffff;}
+.contactDetails .detailsHeading{color:rgba(255,255,255,0.5); font-size: 12px;}
+.contactDetails span{color:#ffffff;font-size: 15px;}
+.contactDetailsPopup .closeIcon{ 
+position: absolute;
+    top: 14px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateY(-34%) rotate(42deg);
+    right: 13px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    z-index: 99;}

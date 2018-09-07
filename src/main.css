@@ -73,7 +73,8 @@
 
 .clientsProduct {
     padding-top: 60px;
-    margin-bottom: 60px;;
+    margin-bottom: 60px;
+    ;
 }
 
 .productsName {
@@ -129,39 +130,107 @@
 .joinus:hover {
     color: #ffffff;
 }
-.page-wrapper h2{
+
+.page-wrapper h2 {
     font-size: 27px;
 }
-.checkBoxContainer{
+
+.checkBoxContainer {
     font-size: 20px;
 }
-.services-page.page-wrapper .head{
+
+.services-page.page-wrapper .head {
     padding-bottom: 15px;
 }
-.about-page.page-wrapper{
+
+.about-page.page-wrapper {
     padding-bottom: 30px;
 }
-.workWrapper img{
+
+.workWrapper img {
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 991px) {
-.financeTeam p {
-    padding: 20px;
+/*****************contactus***************/
+
+.contactusPop .contactDetails {
+    padding: 20px 20px 0px !important
 }
+
+.contactusPop .infoWrapper {
+    padding: 20px 0 34px !important;
+}
+
+.contactusPop h4 {
+    font-weight: 700 !important;
+}
+
+.contactusPop .border-bottom, .contactusPop .border-bottom:focus {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline-offset: 0px;
+    width: 100%;
+    padding-bottom: 9px;
+    margin-top: 40px;
+}
+
+.msg {
+    color: #575757;
+}
+
+.msgarea {
+    margin-top: 40px;
+}
+
+.msgarea textarea {
+    width: 100%;
+}
+
+.send-btn, .send-btn:hover, .btn-primary:active {
+    width: 100px;
+    border-radius: 20px;
+    background: #00c6fb;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #00c6fb 0%, #2989d8 56%, #005bea 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00c6fb 0%, #2989d8 56%, #005bea 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00c6fb 0%, #2989d8 56%, #005bea 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6fb', endColorstr='#005bea', GradientType=0);
+    /* IE6-9 */
+}
+
+.contactDetailsPopup.contactusPop {
+    position: relative;
+    background: none !important;
+    margin-top: -7%;
+}
+
+.contactDetailsPopupContainer {
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.98);
+    -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.98);
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.98);
+}
+
+@media only screen and (max-width: 991px) {
+    .financeTeam p {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .content-heading{
+    .content-heading {
         font-size: 26px;
     }
-    .page-wrapper h2{
+    .page-wrapper h2 {
         font-size: 22px;
     }
-    .page-wrapper h3{
+    .page-wrapper h3 {
         font-size: 20px;
     }
-    .checkBoxContainer{
+    .checkBoxContainer {
         font-size: 18px;
     }
     .financeTeam p {
