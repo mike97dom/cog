@@ -9,7 +9,7 @@ class Services extends React.Component{
                         <h1 className="text-center content-heading">Services</h1>
                     </div>
                 </div>
-                <div classNameName="container">
+                <div className="container">
                 <section className="futureProduct">
                     <div className="row">
                         <div className="col-sm-12 col-md-12">
